@@ -1,1 +1,98 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$eatOSassignment-primary: mat-palette($mat-pink, A200, A100, A400);
+$eatOSassignment-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$eatOSassignment-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$eatOSassignment-theme: mat-light-theme($eatOSassignment-primary, $eatOSassignment-accent, $eatOSassignment-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($eatOSassignment-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    height: 0 !important;
+}
+
+.mat-select-panel {
+    background: white;
+}
+#top-title > div.selectThis > mat-form-field > div > div.mat-form-field-flex.ng-tns-c35-1 {
+        background: white;
+
+}
+
+#content > mat-tab-group > mat-tab-header > div.mat-tab-label-container > div > div {
+    border-bottom: #929292 solid 5px;
+}
+#content > mat-tab-group > mat-tab-header > div.mat-tab-label-container > div > mat-ink-bar {
+    height: 5px;
+    background-color: #ED2890;
+}
+#tools > mat-form-field.mat-form-field.ng-tns-c35-4.mat-primary.mat-form-field-type-mat-select.mat-form-field-can-float.mat-form-field-should-float > div > div.mat-form-field-flex.ng-tns-c35-4 > div {
+    border: 0 !important;
+    padding: 12px;
+}
+#tools > mat-form-field.mat-form-field.ng-tns-c35-6.mat-primary.mat-form-field-type-mat-select.mat-form-field-can-float.mat-form-field-should-float > div > div.mat-form-field-flex.ng-tns-c35-6 > div {
+    border: 0 !important;
+    padding: 12px;
+}
+
+#tools > mat-form-field > div {
+    padding: 0 !important;
+
+}
+/*
+@import '~saturn-datepicker/theming';
+@include sat-datepicker-theme($theme);*/
+
+
+ul {
+    padding-left: 0 !important;
+}
+
+li {
+    ul {
+        background-color: #242424;
+        li {
+            background-color: #242424 !important;
+            .background-highlight {
+                .mat-tree-node{
+                    background-color: #ED2890 !important;
+                }
+            }
+            ul {
+                background-color: black;
+            }
+        }
+    }
+}
+
+mat-nested-tree-node {
+    .background-highlight {
+        .mat-tree-node{
+            background-color: #ED2890 !important;
+        }
+    }
+}

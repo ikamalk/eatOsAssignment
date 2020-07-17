@@ -1,0 +1,170 @@
+#content-container{
+    vertical-align: top;
+    width: calc(100% - 200px);
+    height: 100vh;
+    display: inline-block;
+    background-color: #F6F7FB;
+    #top{
+        background-color: white;
+        border-bottom: #ED2890 solid 1px;
+        box-shadow: 1px 0px 5px 0px black;
+        padding: 5px;
+        #left{
+            float: left;
+            i {
+                margin: 0 10px;
+                cursor: pointer;
+                color: rgb(71, 71, 71);
+
+            }
+            mat-form-field{
+                mat-icon {
+                    vertical-align: middle;
+                    margin: 10px;
+                }
+            }
+        }
+        #right {
+            float: right;
+            margin-right: 15px;
+            #profil {
+                margin: 10px;
+                width: 30px;
+                height: 30px;
+                background-color: #47525D;
+                border-radius: 50%;
+                line-height: 30px;
+                text-align: center;
+                color: white;
+                display: inline-block;
+
+            }
+            #email {
+                display: inline-block;
+                user-select: none;
+            }
+            i {
+                margin: 0 0 0 15px;
+                color: rgb(71, 71, 71);
+                cursor: pointer;
+            }
+        }
+        #top-title {
+            clear: both;
+            margin: 80px 5px 10px 5px;
+            .txt {
+                font-size: 25px;
+                font-weight: 200;
+                margin-top: 20px;
+                width: 50%;
+                display: inline-block;
+            }
+            .selectThis{
+                width: 50%;
+                display: inline-block;
+                text-align: right;
+                mat-form-field {
+                    height: 70px;
+                    font-size: 25px;
+                }
+            }
+          
+        }
+        #divider{
+            clear: both;
+        }
+    }
+    #content{
+        box-shadow: 0 0 6px 0px #bfbfbf;
+        margin: 20px;
+        width: calc(100% - 40px);
+        background-color: white;
+        padding-top: 20px;
+       mat-tab-group > mat-tab-header > div.mat-tab-label-container > div > div {
+           border-bottom: gray solid 10px;
+       }
+       #tools {
+        padding: 20px;
+        mat-form-field {
+            vertical-align: middle;
+            border: gray solid 1px;
+            border-radius: 5px;
+            margin-right: 15px;
+            padding: 3px;
+        }
+        mat-form-field:nth-child(2) {
+            mat-select {
+                mat-option {
+                    direction: rtl;
+                    background-color: red;
+                }
+            }
+        }
+    }
+    #id {
+        margin: 50px;
+        .left {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            div:nth-child(1) {
+                font-size: 25px;
+                color: #ED2890;
+                margin-bottom: 10px;
+            }
+            div:nth-child(2) {
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+        .right {
+            width: 50%;
+            display: inline-block;
+            div {
+                div {
+                    div:nth-child(1) {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    div:nth-child(2) {
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+    #total {
+        margin: 50px 100px;
+        div {
+            div {
+                div:nth-child(1) {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                div:nth-child(2) {
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    }
+
+}
+
+table {
+    width: 100%;
+    box-shadow: 0;
+    border: 0;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: #ED2890;
+}

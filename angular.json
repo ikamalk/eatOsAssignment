@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "eatOSassignment"
+    }
+  },
+  "defaultProject": "eatOSassignment",
+  "cli": {
+    "analytics": "f36d40e2-3e77-4919-abac-1f94df06ce00"
+  }
 }
